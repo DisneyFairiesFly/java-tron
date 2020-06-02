@@ -6,8 +6,12 @@
   </listeners>
   <test name="stest">
     <packages>
-      <package name="stest.tron.wallet.dailybuild.*">
-      </package>
+      <package name="stest.tron.wallet.dailybuild.trctoken"></package>
+      <package name="stest.tron.wallet.dailybuild.manual"></package>
+      <package name="stest.tron.wallet.dailybuild.operationupdate"></package>
+      <package name="stest.tron.wallet.dailybuild.tvmnewcommand"></package>
+      <package name="stest.tron.wallet.dailybuild.internaltransaction"></package>
+      <package name="stest.tron.wallet.dailybuild.assetissue.grammar"></package>
     </packages>
   </test>
 </suite>
