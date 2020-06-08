@@ -167,16 +167,16 @@ public class StressPrecondition {
         logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
         proposalMap.put(24L, 1L);
       }*/
-      if(getChainParameters.get().getChainParameter(i).getKey().equals("getAdaptiveResourceLimitTargetRatio") && getChainParameters.get().getChainParameter(i).getValue() == 10) {
-        logger.info(getChainParameters.get().getChainParameter(i).getKey());
-        logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
-        proposalMap.put(33L, 6L);
-      }
-      if(getChainParameters.get().getChainParameter(i).getKey().equals("getAdaptiveResourceLimitMultiplier") && getChainParameters.get().getChainParameter(i).getValue() == 1000) {
-        logger.info(getChainParameters.get().getChainParameter(i).getKey());
-        logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
-        proposalMap.put(29L, 20L);
-      }
+//      if(getChainParameters.get().getChainParameter(i).getKey().equals("getAdaptiveResourceLimitTargetRatio") && getChainParameters.get().getChainParameter(i).getValue() == 10) {
+//        logger.info(getChainParameters.get().getChainParameter(i).getKey());
+//        logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
+//        proposalMap.put(33L, 6L);
+//      }
+//      if(getChainParameters.get().getChainParameter(i).getKey().equals("getAdaptiveResourceLimitMultiplier") && getChainParameters.get().getChainParameter(i).getValue() == 1000) {
+//        logger.info(getChainParameters.get().getChainParameter(i).getKey());
+//        logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
+//        proposalMap.put(29L, 20L);
+//      }
       if(getChainParameters.get().getChainParameter(i).getKey().equals("getAllowPBFT") && getChainParameters.get().getChainParameter(i).getValue() == 0) {
         logger.info(getChainParameters.get().getChainParameter(i).getKey());
         logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
@@ -208,7 +208,7 @@ public class StressPrecondition {
       PublicMethed.waitProduceNextBlock(blockingStubFull);
       PublicMethed.approveProposal(witness005Address, witnessKey005, proposalId,
           true, blockingStubFull);
-      waitProposalApprove(21, blockingStubFull);
+      waitProposalApprove(40, blockingStubFull);
     }
   }
 
