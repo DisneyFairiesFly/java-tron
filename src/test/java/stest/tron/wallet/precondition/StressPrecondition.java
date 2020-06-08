@@ -160,7 +160,7 @@ public class StressPrecondition {
       if(getChainParameters.get().getChainParameter(i).getKey().equals("getAllowAdaptiveEnergy") && getChainParameters.get().getChainParameter(i).getValue() == 0) {
         logger.info(getChainParameters.get().getChainParameter(i).getKey());
         logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
-        proposalMap.put(21L, 1L);
+        proposalMap.put(19L, 900_0000_0000L);
       }
 /*      if(getChainParameters.get().getChainParameter(i).getKey().equals("getAllowProtoFilterNum") && getChainParameters.get().getChainParameter(i).getValue() == 0) {
         logger.info(getChainParameters.get().getChainParameter(i).getKey());
