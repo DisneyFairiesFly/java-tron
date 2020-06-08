@@ -157,7 +157,7 @@ public class StressPrecondition {
     HashMap<Long, Long> proposalMap = new HashMap<Long, Long>();
 
     for (Integer i = 0; i < getChainParameters.get().getChainParameterCount(); i++) {
-      if(getChainParameters.get().getChainParameter(i).getKey().equals("getAllowAdaptiveEnergy") && getChainParameters.get().getChainParameter(i).getValue() == 0) {
+      if(getChainParameters.get().getChainParameter(i).getKey().equals("getTotalEnergyCurrentLimit") && getChainParameters.get().getChainParameter(i).getValue() == 0) {
         logger.info(getChainParameters.get().getChainParameter(i).getKey());
         logger.info(Long.toString(getChainParameters.get().getChainParameter(i).getValue()));
         proposalMap.put(19L, 900_0000_0000L);
